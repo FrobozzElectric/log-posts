@@ -19,7 +19,7 @@ def json_test(data):
     try:
         json.loads(data)
         return True
-    except:
+    except ValueError:
         return False
 
 def write_log(data, extension='.txt'):
